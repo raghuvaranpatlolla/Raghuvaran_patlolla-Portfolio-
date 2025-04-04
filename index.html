@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Raghuvaranpatlolla - Developer Portfolio</title>
+    <link rel="icon" href="assests/icon.png" class="rel" />
+    <link rel="stylesheet" href="style.css" class="rel" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      class="rel"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <nav class="navbar">
+        <div class="namelogo">
+          <img src="assests/logo.jpg">
+        <div class="left">&nbsp;RaghuvaranPatlolla's Portfolio</div>
+        </div>
+        <div class="right">
+          <ul class="navbar-menu">
+            <li><a href="index.html">Home</a></li>
+            <li>
+              <a href="services.html">Services</a>
+            </li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+
+        <div class="navbar-toggle">
+          <button id="menu-toggle"><i class="fa-solid fa-list"></i></button>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <!-- Chatbot Button -->
+      <section id="chatbotContainer">
+        <div class="chatbot-icon" onclick="toggleChatbot()">💬</div>
+
+        <!-- Chatbot Container -->
+        <div class="chatbot-container">
+          <div class="chatbot-header">
+            Chatbot
+            <span class="close-btn" onclick="toggleChatbot()">×</span>
+          </div>
+          <div class="chatbot-messages" id="chatbotMessages">
+            <div class="bot-message">Hello! How can I help you? 😊</div>
+          </div>
+          <div class="chatbot-input">
+            <input
+              type="text"
+              id="userInput"
+              placeholder="Type a message..."
+              onkeypress="handleKeyPress(event)"
+            />
+            <button onclick="sendMessage()">➤</button>
+          </div>
+        </div>
+      </section>
+
+      <section class="firstSection">
+        <div class="leftSection">
+          Hi, my name is <span class="purple">Raghuvaran Patlolla</span>
+          <div>and I am a Passionate</div>
+          <span id="element"></span>
+
+          <div class="buttons">
+            <button class="btn1">
+              <a href="assests/resume.png" download
+                ><i class="fas fa-file-alt"></i> Resume</a
+              >
+            </button>
+            <button class="btn2">
+              <a href="https://github.com/raghuvaranpatlolla"
+                ><i class="fab fa-github"></i> Github</a
+              >
+            </button>
+            <button class="btn3">
+              <a href="https://www.linkedin.com/in/raghuvaran-patlolla-987697254/"
+                ><i class="fab fa-linkedin"></i> Linkedin</a
+              >
+            </button>
+          </div>
+        </div>
+        <div class="rightSection">
+          <img src="assests/bg.png" alt="bg" />
+        </div>
+      </section>
+      <hr />
+
+      <!-- Skills -->
+      <section>
+        <div class="skills">
+          <h1 class="h1"><i class="ri-stack-fill"></i> Skills</h1>
+          <h2>🖥️ Programming Language</h2>
+          <hr id="skills-hr" />
+          <div class="web-skills">
+            <div class="card">
+              <a href="https://github.com/affancoder/C_language"
+                ><img src="assests/c.png" alt="Card Image"
+              /></a>
+              <h2>C Language</h2>
+              <p></p>
+            </div>
+
+            <div class="card">
+              <a href="https://github.com/affancoder/language.cpp"
+                ><img src="assests/c++.png" alt="Card Image"
+              /></a>
+              <h2>C++</h2>
+              <p></p>
+            </div>
+
+            <div class="card">
+              <a href="https://github.com/affancoder/Python_Codes"
+                ><img src="assests/python.png" alt="Card Image"
+              /></a>
+              <h2>PYTHON</h2>
+              <p></p>
+            </div>
+
+            <div class="card">
+              <a href="https://github.com/affancoder/Java_Codes"
+                ><img src="assests/java.png" alt="Card Image"
+              /></a>
+              <h2>JAVA</h2>
+              <p></p>
+            </div>
+          </div>
+          <h2>🎨 Frontend Development</h2>
+          <hr id="skills-hr" />
+          <div class="web-skills">
+            <div class="card">
+              <a href="https://github.com/affancoder/HTML-Practiced"
+                ><img src="assests/html.png" alt="Card Image"
+              /></a>
+              <h2>HTML</h2>
+              <p></p>
+            </div>
+            <div class="card">
+              <a href="https://github.com/affancoder/CSS_Practiced"
+                ><img src="assests/css.png" alt="Card Image"
+              /></a>
+              <h2>CSS</h2>
+              <p></p>
+            </div>
+            <div class="card">
+              <a href="https://github.com/affancoder/JavaScript"
+                ><img src="assests/javascript.png" alt="Card Image"
+              /></a>
+              <h2>JAVASCRIPT</h2>
+              <p></p>
+            </div>
+            <div class="card">
+              <a href="#"><img src="assests/react.png" alt="Card Image" /></a>
+              <h2>React JS</h2>
+              <p></p>
+            </div>
+          </div>
+          <h2>⚙️ Backend Development</h2>
+          <hr id="skills-hr" />
+          <div class="web-skills">
+            <div class="card">
+              <a href="#"><img src="assests/nodejs.png" alt="" /></a>
+              <h2>NODE JS</h2>
+              <p></p>
+            </div>
+            <div class="card">
+              <a href=""
+                ><img src="assests/express2.png" alt="" id="express"
+              /></a>
+              <h2>EXPRESS JS</h2>
+              <p></p>
+            </div>
+            <div class="card">
+              <a href=""
+                ><img src="assests/php.png" alt="" id="express"
+              /></a>
+              <h2>PHP</h2>
+              <p></p>
+            </div>
+          </div>
+          <h2>🛢️ DataBase</h2>
+          <hr id="skills-hr" />
+          <div class="web-skills">
+            <div class="card">
+              <a href="https://github.com/affancoder/SQL"
+                ><img src="assests/sql.png" alt=""
+              /></a>
+              <h2>MYSQL</h2>
+              <p></p>
+            </div>
+            <div class="card">
+              <a href="https://github.com/affancoder/MongoDB"
+                ><img src="assests/mongodb.png" alt=""
+              /></a>
+              <h2>MONGODB</h2>
+              <p></p>
+            </div>
+            <div class="card">
+              <a href="https://github.com/affancoder/MongoDB"
+                ><img src="assests/firebase.png" alt=""
+              /></a>
+              <h2>FIREBASE</h2>
+              <p></p>
+            </div>
+          </div>
+          <h2>Frontend Framework</h2>
+          <hr id="skills-hr" />
+          <div class="web-skills">
+            <div class="card">
+              <a href="https://github.com/affancoder/Bootstrap_Practiced"
+                ><img src="assests/bootstrap.png" alt=""
+              /></a>
+              <h2>BOOTSTRAP</h2>
+              <p></p>
+            </div>
+            <div class="card">
+              <a href="https://github.com/affancoder/Bootstrap_Practiced"
+                ><img src="assests/laravel.png" alt=""
+              /></a>
+              <h2>LARAVEL</h2>
+              <p></p>
+            </div>
+            <div class="card">
+              <a href=""><img src="assests/tailwindcss.png" alt="" /></a>
+              <h2>TAILWINDCSS</h2>
+              <p></p>
+            </div>
+          </div>
+        </div>
+      </section>
+          <div class="btncontainer">
+            <a
+              href="https://github.com/affancoder/Simtrak_Internship"
+              target="_blank"
+              class="btn-animated"
+              >Visit Repo</a
+            >
+          </div>
+        </div>
+      </section>
+      <hr />
+
+      <section class="secondSection">
+        <span class="text-gray">What i have done so far</span>
+        <div class="study">
+          <i class="fa-solid fa-school">&nbsp;School Education</i>
+        </div>
+
+        <div class="box">
+          <div class="vertical">
+            <img
+              class="image-top"
+              src="assests/developerx2.png"
+              alt=""
+              style="height: 30px; margin-top: 2px; width: 30px"
+            />
+            <div class="vertical-title">ZPHS Boys Anantha Sagar</Body></div>
+            <div class="vertical-desc">
+              Secondary Education Class -  X (2017)
+            </div>
+          </div>
+
+          <div class="vertical">
+            <img
+              class="image-top"
+              src="assests/developerx3.png"
+              alt=""
+              style="
+                height: 40px;
+                margin-top: -3px;
+                width: 34px;
+                margin-left: -5px;
+              "
+            />
+            <div class="vertical-title">
+              Vijetha Junior College
+            </div>
+            <div class="vertical-desc">
+              Higher Secondary XI - XII (2017-2019) <br /><br />Science -
+              Physics, Chemistry, Mathematics, Computer Science
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <div class="school">
+          <div class="vertical-title">ZPHS Boys Anantha Sagar</div>
+          <div class="vertical-desc">
+            Secondary Education Class -   X (2015-2019)
+          </div>
+          <br />
+          <div class="vertical-title">
+            Vijetha Junior College
+          </div>
+          <div class="vertical-desc">
+            Higher Secondary XI - XII (2019-2021) <br /><br />Science - Physics,
+            Chemistry, Mathematics, Computer Science
+          </div>
+        </div>
+      </section>
+
+      <hr />
+      <section class="he">
+        <h1 class="h1">
+          <i class="fa-solid fa-graduation-cap"></i> Higher Education
+        </h1>
+        <div class="firstSection">
+          <div class="leftSection">
+            <img src="assests/h1.jpg" />
+          </div>
+          <div class="rightSection">
+            <form class="colbox">
+              <h1><i class="fa-solid fa-graduation-cap"></i> College</h1>
+              <br />
+              <h2>Cmr Engineering College</h2>
+              <br />
+              <h3>B.Tech - Information Technology</h3>
+              <br />
+              <h3>CGPA: 6.66 </h3>
+              <h5>September 2020 - August 2024</h5>
+            </form>
+          </div>
+        </div>
+      </section>
+
+      <hr />
+      <section class="thirdSection">
+        <h1 class="h1"><i class="fa-brands fa-superpowers"></i> Strengths</h1>
+
+        <div class="strength">
+          <div>
+            <img src="assests/webdev.png" />
+            <p>Development Enthusiasts</p>
+          </div>
+          <div>
+            <img src="assests/Fast.png" />
+            <p>Fast Project Production</p>
+          </div>
+          <div>
+            <img src="assests/learner.png" />
+            <p>Quick Learner</p>
+          </div>
+          <div>
+            <img src="assests/loyal.png" />
+            <p>Loyal & Trustworthy</p>
+          </div>
+          <div>
+            <img src="assests/comm.png" />
+            <p>Excellent Communication</p>
+          </div>
+          <div>
+            <img src="assests/colllll.png" />
+            <p>Collaborative</p>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!-- SLIDE TO TOP -->
+    <button id="scrollToTop" class="fixed-btn scroll-top">
+      <i class="fa-solid fa-arrow-up"></i>
+    </button>
+
+    <!------------------- footer ------------------->
+    <footer>
+      <div class="footer">
+        <div class="footer-container">
+          <!-- Branding Section with Social Media Links -->
+          <div class="footer-section footer-brand">
+            <h3>RaghuvaranPatlolla's Developer Portfolio</h3>
+            <p>Turning ideas into reality, one line of code at a time.</p>
+            <div class="footer-social">
+              <ul>
+                <li>
+                  <a
+                    href="https://www.instagram.com/raghu_xxp_/"
+                    target="_blank"
+                    ><i class="fa-brands fa-instagram"></i
+                  ></a>
+                </li>
+                <li>
+                  <a href="https://github.com/raghuvaranpatlolla" target="_blank"
+                    ><i class="fa-brands fa-github"></i
+                  ></a>
+                </li>
+                <li>
+                  <a
+                    href="https://www.linkedin.com/in/raghuvaran-patlolla-987697254/"
+                    target="_blank"
+                    ><i class="fa-brands fa-linkedin"></i
+                  ></a>
+                </li>
+                <li>
+                  <a
+                    href="https://www.hackerrank.com/profile/raghuvaranpatlo1"
+                    target="_blank"
+                    ><i class="fa-brands fa-hackerrank"></i
+                  ></a>
+                </li>
+                <li>
+                  <a href="https://discord.com/channels/@me" target="_blank"
+                    ><i class="fa-brands fa-discord"></i
+                  ></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Quick Links Section -->
+          <div class="footer-section footer-links">
+            <h4>Quick Links</h4>
+            <ul>
+              <li>
+                <a href="index.html"><i class="fa fa-home"></i> Home</a>
+              </li>
+              <li>
+                <a href="services.html"><i class="fa fa-cogs"></i> Services</a>
+              </li>
+              <li>
+                <a href="projects.html"
+                  ><i class="fa fa-briefcase"></i> Projects</a
+                >
+              </li>
+              <li>
+                <a href="about.html"><i class="fa fa-user"></i> About</a>
+              </li>
+              <li>
+                <a href="contact.html"
+                  ><i class="fa fa-envelope"></i> Contact</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <!-- Contact Information Section -->
+          <div class="footer-section footer-contact">
+            <h4>Contact</h4>
+            <p><i class="fa fa-phone"></i> +91 63093 56883</p>
+            <p><i class="fa fa-envelope"></i> raghuvaranpatlolla1825@gmail.com</p>
+            <p>
+              <i class="fa fa-map-marker"></i> Hyderabad, Telangana, India
+            </p>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>Copyright &copy; raghuvaranpatlolla1825@gmail.com | All rights reserved</p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script>
+      var typed = new Typed("#element", {
+        strings: [
+          "Full Stack Web Developer",
+          "Programmer",
+          "Responsive Web Designer",
+          "UI/UX Developer",
+        ],
+        typeSpeed: 50,
+        backSpeed: 50,
+        loop: true,
+      });
+    </script>
+    <script src="app.js"></script>
+  </body>
+</html>

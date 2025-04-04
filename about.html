@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>RaghuvaranPatlolla - Developer Portfolio</title>
+    <link rel="stylesheet" href="style.css" class="rel" />
+    <link rel="icon" href="assests/icon.png" class="rel" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      class="rel"
+    />
+    <style>
+      
+      .bullet-list {
+        font-size: 1.2rem;
+        list-style: none;
+        padding-left: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+      
+      .bullet-list li {
+        margin-bottom: 15px;
+        padding-left: 25px;
+        position: relative;
+        transition: transform 0.3s ease;
+      }
+      .bullet-list li:hover {
+        transform: scale(1.1);
+      }
+      .bullet-list li::before {
+        content: "\1F4CC";
+        font-size: 1.5rem;
+        color: #1e90ff;
+        position: absolute;
+        left: -30px;
+      }
+
+      /* New styles for hobbies and interests section */
+      .hobbies-interests {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        margin: 40px 0;
+        gap: 30px;
+      }
+      
+      .hobbies, .interests {
+        flex: 1;
+        min-width: 300px;
+        background: rgba(255, 255, 255, 0.1);
+        padding: 20px;
+        border-radius: 15px;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s ease;
+      }
+      
+      .hobbies:hover, .interests:hover {
+        transform: translateY(-5px);
+      }
+      .about-me h2 {
+  color: #1e90ff;
+  text-align: center;
+  font-size: 2rem;
+  margin: 30px 0;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.about-me h2::after {
+  content: '';
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80px;
+  height: 3px;
+  background: linear-gradient(to right, #1e90ff, #00bfff);
+}
+      .hobbies h2, .interests h2 {
+        color: #1e90ff;
+        text-align: center;
+        margin-bottom: 20px;
+        font-size: 1.8rem;
+        position: relative;
+      }
+      
+      .hobbies h2::after, .interests h2::after {
+        content: '';
+        position: absolute;
+        bottom: -10px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 80px;
+        height: 3px;
+        background: linear-gradient(to right, #1e90ff, #00bfff);
+      }
+    </style>
+  </head>
+  <body>
+    <!-- <div id="preloader"></div> -->
+    <header>
+      <nav class="navbar">
+        <div class="namelogo">
+          <img src="assests/logo.jpg" />
+          <div class="left">&nbsp;RaghuvaranPatlolla's Portfolio</div>
+        </div>
+        <div class="right">
+          <ul class="navbar-menu">
+            <li><a href="index.html">Home</a></li>
+            <li>
+              <a href="services.html">Services</a>
+            </li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact Me</a></li>
+          </ul>
+        </div>
+        <div class="navbar-toggle">
+          <button id="menu-toggle"><i class="fa-solid fa-list"></i></button>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <h1 class="heading">Certificates</h1>
+      <hr style="margin-top: -65px" />
+      <div class="certificate">
+        <img src="assests/cpp.png" alt="op" />
+        <img src="assests/pythonCe.png" alt="op" />
+        <img src="assests/JAVACER.png" alt="" />
+        <img src="assests/php.png" alt="#" />
+        <img src="assests/ML.png" alt="" />
+        <img src="assests/sde.png" alt="p" />
+        <img src="assests/hacker.png" alt="" />
+      </div>
+
+      <!-- About Me Section -->
+      <section class="about-me">
+        <h2>About Me</h2>
+        <ul class="bullet-list">
+          <li>Full-stack developer proficient in Java, JavaScript, and modern web technologies.</li>
+          <li>Skilled in building dynamic and responsive web applications.</li>
+          <li>Passionate about problem-solving and software optimization.</li>
+          <li>Experienced in creating efficient database schemas and queries.</li>
+          <li>Quick learner with a strong foundation in Data Structures and Algorithms (DSA).</li>
+          <li>Built projects using MERN stack, React.js, and RESTful APIs.</li>
+          <li>Enjoy collaborating on team projects and contributing to open-source initiatives.</li>
+          <li>Focused on clean, maintainable code and performance optimization.</li>
+          <li>Have a strong passion for continuous learning and upskilling in new technologies.</li>
+          <li>Completed several certification courses in software development and machine learning.</li>
+          <li>Adaptable to both frontend and backend roles with a problem-solving mindset.</li>
+          <li>Excellent at debugging and finding smart solutions under pressure.</li>
+        </ul>
+      </section>
+
+      <!--  Hobbies and Interests Section -->
+      <section class="hobbies-interests">
+        <div class="hobbies">
+          <h2>Hobbies</h2>
+          <ul class="bullet-list">
+            <li>Coding personal projects and solving programming challenges</li>
+            <li>Exploring new technologies and frameworks</li>
+            <li>Reading tech blogs and documentation</li>
+            <li>Contributing to open-source projects</li>
+            <li>Playing chess and strategy games</li>
+            <li>Watching tech conferences and developer talks</li>
+          </ul>
+        </div>
+        
+        <div class="interests">
+          <h2>Interests</h2>
+          <ul class="bullet-list">
+            <li>Artificial Intelligence and Machine Learning</li>
+            <li>Web3 and Blockchain technologies</li>
+            <li>Cloud Computing and DevOps</li>
+            <li>UI/UX Design principles</li>
+            <li>Cybersecurity and ethical hacking</li>
+            <li>Data Science and Analytics</li>
+          </ul>
+        </div>
+      </section>
+    </main>
+
+    <!-- SLIDE TO TOP -->
+    <button id="scrollToTop" class="fixed-btn scroll-top">
+      <i class="fa-solid fa-arrow-up"></i>
+    </button>
+
+    <!-- Chatbot Button -->
+    <section id="chatbotContainer">
+      <div class="chatbot-icon" onclick="toggleChatbot()">💬</div>
+
+      <!-- Chatbot Container -->
+      <div class="chatbot-container">
+        <div class="chatbot-header">
+          Chatbot
+          <span class="close-btn" onclick="toggleChatbot()">×</span>
+        </div>
+        <div class="chatbot-messages" id="chatbotMessages">
+          <div class="bot-message">Hello! How can I help you? 😊</div>
+        </div>
+        <div class="chatbot-input">
+          <input
+            type="text"
+            id="userInput"
+            placeholder="Type a message..."
+            onkeypress="handleKeyPress(event)"
+          />
+          <button onclick="sendMessage()">➤</button>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="footer">
+        <div class="footer-container">
+          <!-- Branding Section with Social Media Links -->
+          <div class="footer-section footer-brand">
+            <h3>RaghuvaranPatlolla's Developer Portfolio</h3>
+            <p>Turning ideas into reality, one line of code at a time.</p>
+            <div class="footer-social">
+              <ul>
+                <li>
+                  <a
+                    href="https://www.instagram.com/raghu_xxp_/"
+                    target="_blank"
+                    ><i class="fa-brands fa-instagram"></i
+                  ></a>
+                </li>
+                <li>
+                  <a href="https://github.com/raghuvaranpatlolla" target="_blank"
+                    ><i class="fa-brands fa-github"></i
+                  ></a>
+                </li>
+                <li>
+                  <a
+                    href="https://www.linkedin.com/in/raghuvaran-patlolla-987697254/"
+                    target="_blank"
+                    ><i class="fa-brands fa-linkedin"></i
+                  ></a>
+                </li>
+                <li>
+                  <a href="https://www.hackerrank.com/profile/raghuvaranpatlo1" target="_blank"
+                    ><i class="fa-brands fa-hackerrank"></i
+                  ></a>
+                </li>
+                <li>
+                  <a href="https://discord.com/channels/@me" target="_blank"
+                    ><i class="fa-brands fa-discord"></i
+                  ></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Quick Links Section -->
+          <div class="footer-section footer-links">
+            <h4>Quick Links</h4>
+            <ul>
+              <li>
+                <a href="index.html"><i class="fa fa-home"></i> Home</a>
+              </li>
+              <li>
+                <a href="services.html"><i class="fa fa-cogs"></i> Services</a>
+              </li>
+              <li>
+                <a href="projects.html"
+                  ><i class="fa fa-briefcase"></i> Projects</a
+                >
+              </li>
+              <li>
+                <a href="about.html"><i class="fa fa-user"></i> About</a>
+              </li>
+              <li>
+                <a href="contact.html"
+                  ><i class="fa fa-envelope"></i> Contact</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <!-- Contact Information Section -->
+          <div class="footer-section footer-contact">
+            <h4>Contact</h4>
+            <p><i class="fa fa-phone"></i> +91 63093 56883</p>
+            <p><i class="fa fa-envelope"></i> raghuvaranpatlolla1825@gmail.com</p>
+            <p>
+              <i class="fa fa-map-marker"></i> Hyderabad, Telangana, India
+            </p>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>Copyright &copy; raghuvaranpatlolla1825@gmail.com | All rights reserved</p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
+
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>

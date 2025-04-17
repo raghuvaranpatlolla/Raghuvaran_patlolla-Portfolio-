@@ -143,7 +143,7 @@ function findBestResponse(userMessage) {
       }
   }
 
-  return bestMatch || "I'm still learning! 😊 Ask me anything about MD Raghuvaran Patlolla";
+  return bestMatch || "I'm still learning! 😊 Ask me anything about Raghuvaran Patlolla";
 }
 
 // Send Message
